@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="75.0" prefWidth="700.0" style="-fx-background-color: #424242;">
+         <children>
+            <Label layoutX="297.0" layoutY="26.0" text="My 2Do's" textFill="#ebe8e8">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="listRefreshButton" fitHeight="21.0" fitWidth="27.0" layoutX="646.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/baseline_refresh_black_48dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="605.0" layoutY="53.0" prefHeight="17.0" prefWidth="42.0" text="Refresh" textFill="#fff6f6" />
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listTask" layoutX="302.0" layoutY="78.0" prefHeight="315.0" prefWidth="392.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXListView>
+      <JFXTextField fx:id="listTaskfield" focusColor="#424242" layoutX="23.0" layoutY="154.0" prefHeight="36.0" prefWidth="271.0" promptText="Task" unFocusColor="#dd2222">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="listDescriptionField" focusColor="#424242" layoutX="21.0" layoutY="211.0" prefHeight="36.0" prefWidth="271.0" promptText="Description" unFocusColor="#e81c1c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="listSaveTaskButton" layoutX="107.0" layoutY="259.0" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: #d32f2f; -fx-background-radius: 10;" text="Save Task" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

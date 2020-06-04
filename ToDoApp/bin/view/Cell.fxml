@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80" prefWidth="372.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="iconImageView" fitHeight="53.0" fitWidth="43.0" layoutX="8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-task-planning-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="taskLabel" layoutX="51.0" layoutY="2.0" prefHeight="28.0" prefWidth="244.0" text="Task" textFill="#f8e9e9">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="taskDescription" layoutX="51.0" layoutY="33.0" prefHeight="28.0" prefWidth="293.0" text="Description" textFill="#f5f3f3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="deleteButton" fitHeight="28.0" fitWidth="33.0" layoutX="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-remove-100.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="64.0" prefHeight="17.0" prefWidth="372.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="dateLabel" layoutX="229.0" prefHeight="17.0" prefWidth="143.0" text="Date Created" textFill="#309e3b" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="UpdateButton" fitHeight="28.0" fitWidth="21.0" layoutX="344.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-edit-60.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="303.0" layoutY="22.0" text="Delete" textFill="#f5f4f4">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="22.0" text="Edit" textFill="#fffafa">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

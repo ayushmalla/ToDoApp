@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="302.0" layoutY="24.0" prefHeight="33.0" prefWidth="96.0" text="2DO" textFill="#f2e0e0">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="notTaskLabel" layoutX="263.0" layoutY="173.0" prefHeight="27.0" prefWidth="222.0" text="Not Tasks For Today, yet!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addButton" fitHeight="54.0" fitWidth="75.0" layoutX="326.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/baseline_add_circle_black_48dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
